@@ -95,7 +95,7 @@ load_nvm_bundle (std::string const& filename,
     /* Read number of views. */
     int num_views = 0;
     in >> num_views;
-    if (num_views < 0 || num_views > 10000)
+    if (num_views < 0 || num_views > 20000)
         throw util::Exception("Invalid number of views: ",
             util::string::get(num_views));
 
